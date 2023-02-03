@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  lang: 'en-US',
+  // lang: 'en-US',
   title: "稀土前端",
   description: "稀土前端部落",
   base: "/",
@@ -11,6 +11,7 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     siteTitle: '稀土前端',
+    outline: [2,4],
     outlineTitle: '大纲',
     nav: [
       { text: "首页", link: "/" },
@@ -76,8 +77,9 @@ export default defineConfig({
       "/essay/": [
         {
           text: "随笔",
+          collapsible: true,
           items: [
-            { text: "2021-12", link: "/essay/2021-12" },
+            { text: "权限系统设计模式", link: "/essay/权限系统设计模式/" },
           ],
         },
       ],
