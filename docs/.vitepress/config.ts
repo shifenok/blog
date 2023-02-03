@@ -34,7 +34,7 @@ export default defineConfig({
     //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
     //   text: 'Edit this page on GitHub'
     // },
-    // lastUpdatedText: 'Updated Date',
+    lastUpdatedText: '最近修改时间',
     // algolia: {
     //   appId: '...',
     //   apiKey: '...',
