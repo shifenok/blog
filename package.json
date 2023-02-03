@@ -1,0 +1,23 @@
+{
+  "name": "shifenok",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitee.com/strongx/blog.git",
+  "author": "strong",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "start": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.2",
+    "axios": "^1.1.3",
+    "less": "^4.1.3",
+    "release-it": "^15.5.0",
+    "vitepress": "^1.0.0-alpha.21",
+    "zx": "3.0.0"
+  }
+}
