@@ -6,10 +6,10 @@ export default defineConfig({
   description: "稀土前端部落",
   base: "/",
 
-  head: [["link", { rel: "icon", type: "image/svg+xml", href: "./logo.svg" }]],
+  head: [["link", { rel: "icon", type: "image/svg+xml", href: "/logo.svg" }]],
   lastUpdated: true,
   themeConfig: {
-    logo: "./logo.svg",
+    logo: "/logo.svg",
     siteTitle: '稀土前端',
     outlineTitle: '大纲',
     nav: [
