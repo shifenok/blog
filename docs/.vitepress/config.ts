@@ -26,7 +26,7 @@ export default defineConfig({
           { text: 'xx', link: '/item-2' },
         ]}
       ]},
-      { text: "生活感悟", link: "/life/", activeMatch: "/life/" },
+      { text: "生活", link: "/life/", activeMatch: "/life/" },
       // { text: "我的小铺", link: "/shop/", activeMatch: "/shop/" },
       { text: "关于我", link: "/me/", activeMatch: "/me/" },
     ],
@@ -36,11 +36,11 @@ export default defineConfig({
     //   text: 'Edit this page on GitHub'
     // },
     lastUpdatedText: '最近修改时间',
-    // algolia: {
-    //   appId: '...',
-    //   apiKey: '...',
-    //   indexName: '...'
-    // },
+    algolia: {
+      appId: '93IGC3WMPT',
+      apiKey: '89ba29c1450e449e4f362d362a4ca2f4',
+      indexName: 'wxz'
+    },
     footer: {
       message: "只要努力，就能成为你想成为的人",
       copyright: "By Strong",
@@ -69,8 +69,16 @@ export default defineConfig({
       "/life/": [
         {
           text: '生活感悟',
+          collapsible: true,
           items: [
             { text: "2022-10-24", link: "/life/2022-10-24" },
+          ]
+        },
+        {
+          text: '每日一句',
+          collapsible: true,
+          items: [
+            { text: "2023-02-13", link: "/life/daily-words/2023-02-13" },
           ]
         }
       ],
@@ -80,6 +88,15 @@ export default defineConfig({
           collapsible: true,
           items: [
             { text: "权限系统设计模式", link: "/essay/权限系统设计模式/" },
+            { text: "WEB3", items: [
+              { text: "基础概念", link: "/essay/web3/基础概念" },
+              { text: "部署第一个智能合约", link: "/essay/web3/部署第一个智能合约" },
+              // { text: "部署第一个NFT", link: "/essay/web3/部署第一个NFT" },
+              // { text: "dApp", link: "/essay/web3/部署第一个NFT" },
+            ]},
+            // { text: "区块链入门", items: [
+            //   { text: "本地网络开发加密数字货币", link: "/essay/区块链入门/本地网络开发加密数字货币" }
+            // ]},
           ],
         },
       ],
